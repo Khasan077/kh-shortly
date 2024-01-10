@@ -39,6 +39,18 @@
     font-display: swap;
 }
 
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* Global */
 
 html{
@@ -95,6 +107,7 @@ img{
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s ease;
+    white-space: nowrap;
 }
 
 .button:hover{
@@ -111,11 +124,11 @@ img{
     line-height: 22.5px;
 }
 
-/* .button--big{
+.button--big{
     padding: 18px 40px 16px;
-} */
+} 
 
-.button--rectangle{
+ .button--rectangle{
     border-radius: 5px;
 }
 
@@ -239,7 +252,72 @@ img{
     font-size: 22px;
     line-height: 36px;
 }
+
+/* URL-FORM */
+.index-url-shortener-features-wrappper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-bg) ;
+}
+.index-url-shortener-features-wrappper__url-shortener {
+    margin-top: -84px;
+}
+
+/* URL-SHORTNER */
+.url-shortener__form {
+    display: flex;
+    padding: 52px 64px;
+    background-color: #4b3f6b;
+    background-image: url(../img/purple-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.url-shortner__input-wrapper {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.url-shortner__input {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: 14px 32px;
+    font-size: 36px;
+    line-height: 26px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: var(--heading-color);
+}
+
+.url-shortner__input:not(:focus):not(:placeholder-shown):invalid{
+    border-color: var(--error-color);
+    color: var(--error-color);
+}
+.url-shortner__error-msg {
+    display: none;
+}
+
+
+.url-shortner__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortner__error-msg{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--error-color);
+    letter-spacing: 0.11px;
+}
+.url-shortner__submit {
+}
 .button {
 }
-.button--big {
+.button--rectangle-big {
 }
