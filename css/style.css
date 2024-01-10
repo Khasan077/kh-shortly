@@ -261,12 +261,14 @@ img{
 }
 .index-url-shortener-features-wrappper__url-shortener {
     margin-top: -84px;
+    margin-bottom: 120px;
 }
 
 /* URL-SHORTNER */
 .url-shortener__form {
     display: flex;
     padding: 52px 64px;
+    margin-bottom: 24px;
     background-color: #4b3f6b;
     background-image: url(../img/purple-bg.svg);
     background-size: cover;
@@ -315,9 +317,39 @@ img{
     color: var(--error-color);
     letter-spacing: 0.11px;
 }
-.url-shortner__submit {
+
+.url-shortner__results {
+    font-size: 20px;
+    line-height: 36px;
 }
-.button {
+
+.url-shortner__result {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--heading-color);
 }
-.button--rectangle-big {
+
+.url-shortner__result:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.url-shortner__original-link {
+    width: 100%;
+    margin-right: 24px;
+    word-spacing: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.url-shortner__orginal-link {
+    margin-right: 24px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.url-shortner__copy-button{
+    min-width: 103px;
 }
