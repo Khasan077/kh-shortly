@@ -135,6 +135,14 @@ img{
 .button--rectangle-big{
     border-radius: 10px;
 }
+
+.url-shortner__copy-button{
+    min-width: 103px;
+}
+
+.url-shortner__copy-button--copied{
+    background-color: #3a3054;
+}
 /* SITE-HEADER */
 
 .site-header {
