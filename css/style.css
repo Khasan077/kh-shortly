@@ -319,8 +319,13 @@ img{
 }
 
 .url-shortner__results {
+    display: none;
     font-size: 20px;
     line-height: 36px;
+}
+
+.url-shortner__results--open{
+    display: block;
 }
 
 .url-shortner__result {
